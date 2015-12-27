@@ -6,7 +6,7 @@
 
         $(this).find('ul').hide();
         $(this).find('li').each(function(){
-            if ($(this).find('ul').size()>0){
+            if ($(this).find('ul li').size()>0){
                     $(this).prepend('<span data-toggle="show-menu">'+options.icons[0]+'</span>');
             }
         });
