@@ -7,18 +7,17 @@
         $(this).find('ul').hide();
         $(this).find('li').each(function(){
             if ($(this).find('ul').size()>0){
-                var temp=$(this).html();
-                    $(this).html('<span>'+options.icons[0]+'</span>'+temp);
+                    $(this).prepend('<span data-toggle="show-menu">'+options.icons[0]+'</span>');
             }
         });
 
-        $(this).find('li span').click(function(){
+        $(document).on('click', '[data-toggle=show-menu]', function(){
             if ($(this).html()==options.icons[0]) {
                 $(this).html(options.icons[1]);
-                $(this).parents('li').children('ul').slideDown();
+                $(this).closest('li').children('ul').slideDown();
             } else {
                 $(this).html(options.icons[0]);
-                $(this).parents('li').children('ul').slideUp();
+                $(this).closest('li').children('ul').slideUp();
             }
         });
 
