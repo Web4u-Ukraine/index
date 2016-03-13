@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="5d663809-a4c3-4936-aad4-3e3adee30f8a" name="Game (game.webforyou.com.ua)" url="http://server.devpl.net">
+        <fileTransfer host="server.devpl.net" port="21" rootFolder="/public_html/" password="df98df92dfe9dfdadfdbdfe2dfd8dfe4dffddfc7" username="admin_game">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
